@@ -1,0 +1,24 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --primary: #1a1a1a;
+  --secondary: #2a2a2a;
+}
+
+body {
+  @apply dark:bg-gray-900 dark:text-white;
+}
+
+.drawing-board {
+  touch-action: none;
+}
+
+.toolbar-button {
+  @apply p-2 rounded-lg transition-colors duration-200 hover:bg-gray-700 focus:outline-none focus:ring-2 focus:ring-blue-500;
+}
+
+.toolbar-button.active {
+  @apply bg-blue-600 text-white;
+}
